@@ -1,9 +1,15 @@
+#include <termios.h>
 #include <unistd.h>
 
+void enableRawMode() {
+    struct termios raw;
+
+    tcgetattr(STDIN_FILENO, &raw);
+
+    raw.c_lflag &= ~(ECHO);
+    
+}
+
 int main() {
-    char c;
-
-    while(read(STDIN_FILENO, &c, 1) == 1);
-
     return 0;
 }
