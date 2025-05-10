@@ -1,0 +1,16 @@
+[
+ {
+  "directory": "/home/matteo/code/textEditor",
+  "arguments": [
+   "cc",
+   "src/kilo.c",
+   "-o",
+   "bin/kilo",
+   "-Wall",
+   "-Wextra",
+   "-pedantic",
+   "-std=c99"
+  ],
+  "file": "src/kilo.c"
+ }
+]
